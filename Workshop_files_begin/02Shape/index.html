@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello, WebVR! • A-Frame</title>
+    <meta name="viewport" content="width=device-width">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="scripts/main.js" defer></script>
+  </head>
+  <body>
+    <a-scene background="color: #333333">
+      <a-box id="myBox"
+        position="-1 3 1"
+        width="3"
+        height="2"
+        depth="1"
+        rotation="0 30 20"
+        color="#BBAA33" 
+        shadow>
+      </a-box>
+      
+      <a-torus-knot id="knot"
+        positions="-1 3 1"
+        width"6"
+        height"3"
+        color="#86bec6"
+        rotation="0 80 0"
+        shadow>
+        </a-torus-knot>
+      
+      <a-dodecahedron id="dodecahedron"
+        position="3 3 -2"
+        width"5"
+        height"5"
+        rotation="45 0 0"
+        color="#6f3d59"
+        shadow>
+        </a-dodecahedron>
+      
+      <a-sphere id="sphere"
+        position="5 3 1"
+        width="7"
+        height="7"
+        depth="1"
+        rotation="5 10 0"
+        color="#cc6681"
+        shadow>
+      </a-sphere>
+      
+      <a-cylinder id="cylinder"
+        positions="-1 10 10"
+        width"8"
+        height"8"
+        color="#7874bc"
+        rotation="30 90 0"
+        shadow>
+        </a-cylinder>
+      
+      <a-plane id="ground"
+        position="-1 3 -2"
+        width="15"
+        Height="15"
+        color="#ffffff"
+        shadow>
+      </a-plane>
+      
+    </a-scene>
+  </body>
+</html>
